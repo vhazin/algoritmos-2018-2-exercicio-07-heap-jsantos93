@@ -3,16 +3,21 @@
 int main()
 {
     int n;
-    char heap;
 
     scanf("%d", &n);
 
-    for (int *i = 0; i < (n - 1); i++)
-    {
-        scanf(" %c", &heap[i]);
-    }
+    int heap[n];
+    char heap_c[n];
+    printf("%d\n", n);
 
-    printf("fon");
+    for (int i = 0; i < n; i++)
+    {
+        scanf(" %c/%d", &heap_c[i], &heap[i]);
+    }
+    for (int i = 0; i < n; i++)
+    {
+        printf("(%c/%d)\n", heap_c[i], heap[i]);
+    }
 
     return 0;
 }
